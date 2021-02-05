@@ -14,3 +14,10 @@ class Baz {
 }
 
 const baz = new Baz('test1', 'test2')
+
+/**
+ 
+*******class decorators*******
+Arguments for example-class-decorator: test1,test2
+
+ */

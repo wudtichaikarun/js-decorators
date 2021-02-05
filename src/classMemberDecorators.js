@@ -1,5 +1,9 @@
 console.log('*******class member decorators*******')
-// Example 01
+/**
+ * @param  target class target Foo
+ * @param name method name sum
+ * @param descriptor method sum
+ */
 function log(target, name, descriptor) {
   const original = descriptor.value
   descriptor.value = function (...args) {
@@ -49,3 +53,14 @@ class Bar {
 
 const bar = new Bar()
 bar.sum(1, 2)
+
+/**
+ 
+*******class member decorators*******
+Executed....
+Result: 3
+-----------
+service-foo Executed....
+service-foo Result: 3
+
+ */
